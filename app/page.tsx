@@ -3,7 +3,7 @@
 import { Button, Container, Grid, Group, Stack, Text, Title } from "@mantine/core";
 import { IconBrandGithub, IconRocket, IconShield, IconSparkles } from "@tabler/icons-react";
 import Link from "next/link";
-import HomePageHeader from "./components/HomePageHeader";
+import HomePageHeader from "./components/Header";
 
 export default function HomePage() {
   return (
@@ -34,7 +34,7 @@ export default function HomePage() {
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 6 }}>
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl opacity-10 blur-3xl" />
+                <div className="absolute inset-0 rounded-2xl opacity-10" />
                 <div className="relative bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl">
                   <div className="aspect-video bg-gray-100 dark:bg-gray-700 rounded-lg" />
                 </div>
@@ -45,7 +45,7 @@ export default function HomePage() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-white dark:bg-gray-800">
+      <section className="py-20">
         <Container size="xl">
           <Stack gap="xl" align="center" className="text-center mb-16">
             <Title order={2} className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">

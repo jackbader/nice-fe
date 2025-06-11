@@ -10,9 +10,13 @@
   },
   "dependencies": {
     "@mantine/core": "8.1.0",
+    "@mantine/form": "^8.1.0",
     "@mantine/hooks": "8.1.0",
+    "@mantine/notifications": "^8.1.0",
     "@tabler/icons-react": "^3.34.0",
     "@tailwindcss/postcss": "^4.1.8",
+    "@types/js-cookie": "^3.0.6",
+    "js-cookie": "^3.0.5",
     "next": "15.2.3",
     "next-themes": "^0.4.6",
     "react": "19.1.0",

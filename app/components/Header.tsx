@@ -1,19 +1,18 @@
-"use client";
-
-import { Button, Container, Group, Text } from "@mantine/core";
+import { Container, Group, Text, Title } from "@mantine/core";
 import Link from "next/link";
 import ThemeSwitch from "./ThemeSwitch";
+import AuthButtons from "./AuthButtons";
 
-export default function HomePageHeader() {
+export default function Header() {
     return (
         <header className="border-b border-gray-200 dark:border-gray-800">
             <Container size="xl" className="h-16">
                 <Group justify="space-between" h="100%">
                     {/* Logo */}
                     <Link href="/" className="no-underline">
-                        <Text size="xl" fw={700} className="text-gray-900 dark:text-white">
+                        <Title order={1} size="xl" fw={700} className="text-gray-900 dark:text-white">
                             Nice
-                        </Text>
+                        </Title>
                     </Link>
 
                     {/* Navigation and Actions */}
@@ -29,12 +28,7 @@ export default function HomePageHeader() {
 
                         <Group gap="sm">
                             <ThemeSwitch />
-                            <Button variant="subtle" component={Link} href="/login">
-                                Log in
-                            </Button>
-                            <Button component={Link} href="/signup">
-                                Sign up
-                            </Button>
+                            <AuthButtons />
                         </Group>
                     </Group>
                 </Group>
